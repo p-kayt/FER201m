@@ -1,0 +1,27 @@
+{
+  "name": "confusion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-kayt/FER201m.git"
+  },
+  "author": "Kayt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p-kayt/FER201m/issues"
+  },
+  "homepage": "https://github.com/p-kayt/FER201m#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}

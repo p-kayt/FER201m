@@ -40,3 +40,7 @@ body {
 .google-map {
    border-radius: 2%;
 }
+
+.container h2{
+   color: rgba(0, 170, 255, 0.759);
+}

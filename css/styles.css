@@ -77,6 +77,14 @@ body {
    padding-left: 210px;
    font-size: 16px;
 }
+
+#carouselButton {
+   right:15px;
+   position: absolute;
+   bottom: 0px;
+   z-index: 1;
+}
+
 /* @media screen and (max-width: 576px){
    .carousel-caption {
       bottom: 0;

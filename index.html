@@ -123,6 +123,9 @@
                      <span class="carousel-control-next-icon"></span>
                   </a>
                </div>
+                  <button class="btn btn-danger btn-sm" id="carouselButton">
+                     <span id="carousel-button-icon" class="fa fa-pause"></span>
+                  </button>
             </div>
 
             <div class="row row-content align-items-center">
@@ -302,7 +305,6 @@
                   <!-- room type: smoking/non smoking -->
                   <dd class="col col-md-3">Section</dd>
                   <div class="col col-md-8">
-                     
                      <label class="btn btn-success" for="non_smoking">
                         <input type="radio" class="form-check-input d-none" id="non_smoking" name="optradio" value="option7" />Non Smoking
                      </label>
@@ -342,5 +344,22 @@
             $('[data-toggle="tooltip"]').tooltip();
          });
       </script> -->
+
+      <script>
+         $(document).ready(function () {
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carouselButton").click(function () {
+               if ($("#carouselButton").children("span").hasClass("fa-pause")) {
+                  $("#mycarousel").carousel("pause");
+                  $("#carouselButton").children("span").removeClass("fa-pause");
+                  $("#carouselButton").children("span").addClass("fa-play");
+               } else if ($("#carouselButton").children("span").hasClass("fa-play")) {
+                  $("#mycarousel").carousel("cycle");
+                  $("#carouselButton").children("span").removeClass("fa-play");
+                  $("#carouselButton").children("span").addClass("fa-pause");
+               }
+            });
+         });
+      </script>
    </body>
 </html>

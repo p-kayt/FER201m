@@ -1,99 +1,71 @@
-address {
-   font-size: 80%;
-   margin: 0px;
-   color: #0f0f0f;
-}
-
-body {
-   padding: 50px 0px 0px 0px;
-   z-index: 0;
-}
-
-/* class */
 .row-header {
-   margin: 0px auto;
-   padding: 0px;
+  margin: 0px auto;
+  padding: 0px 0px;
 }
-
+nav .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 .row-content {
-   margin: 0px auto;
-   padding: 50px 0px 50px 0px;
-   border-bottom: 1px ridge;
-   min-height: 400px;
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
 }
-
 .footer {
-   background-color: #d1c4e9;
-   margin: 0px auto;
-   padding: 20px 0px 20px 0px;
+  background-color: #d1c4e9;
+  margin: 0px auto;
+  padding: 20px 0px;
 }
 .jumbotron {
-   padding: 70px 30px 70px 30px;
-   margin: 0px auto;
-   background: #9575cd;
-   color: floralwhite;
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575cd;
+  color: floralwhite;
 }
-
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
 .navbar-dark {
-   background-color: #512da8;
+  background-color: #512da8;
 }
-/* map */
-.google-map {
-   border-radius: 2%;
-}
-/* heading */
-.container h2 {
-   color: rgba(0, 170, 255, 0.759);
-}
-/* tab content */
 .tab-content {
-   border-left: 1px solid #ddd;
-   border-right: 1px solid #ddd;
-   border-bottom: 1px solid #ddd;
-   padding: 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
 }
-/* carousel */
 .carousel {
-   background: #512da8;
+  background: #512da8;
 }
-
-.carousel-item {
-   height: 300px;
+.carousel .carousel-item {
+  height: 300px;
 }
-.carousel-item img {
-   position: absolute;
-   top: 0;
-   left: 0;
-   min-height: 300px;
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
 }
-
-.carousel-caption {
-   top: 0;
-   margin-top: 25px;
-   bottom: auto;
+.carousel .carousel-caption {
+  top: 0;
+  margin-top: 25px;
+  bottom: auto;
 }
-.carousel-caption p {
-   padding-top: 2%;
-   padding-left: 210px;
-   font-size: 16px;
+.carousel .carousel-caption p {
+  padding-top: 2%;
+  padding-left: 210px;
+  font-size: 16px;
 }
-
 #carouselButton {
-   right:15px;
-   position: absolute;
-   bottom: 0px;
-   z-index: 1;
-}
-
-/* @media screen and (max-width: 576px){
-   .carousel-caption {
-      bottom: 0;
-      margin-top: 25px;
-      top: auto;
-   }
-} */
-/* button border none */
-nav .btn:focus {
-   outline: none;
-   box-shadow: none;
+  right: 15px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }

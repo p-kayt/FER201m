@@ -39,9 +39,7 @@
                   </li>
                </ul>
                <span class="navbar-text">
-                  <button class="btn text-light border-none" type="button" data-toggle="modal" data-target="#loginModal">
-                     <span class="fa fa-sign-in"></span> Login
-                  </button>
+                  <button class="btn text-light border-none" type="button" id="login-form"><span class="fa fa-sign-in"></span> Login</button>
                </span>
             </div>
          </div>
@@ -62,7 +60,9 @@
                   <img src="img/logo.png" class="img-fluid" />
                </div>
                <div class="col-12 col-sm align-self-center">
-                  <button class="btn btn-block nav-link btn-warning" type="button" data-toggle="modal" data-target="#reserveModal">Reserve Table</button>
+                  <button class="btn btn-block nav-link btn-warning" type="button" id="reserve-form" data-toggle="tooltip" 
+						data-html="true"  title="Or Call us at<br><strong>+852 12345678</strong>" 
+						data-placement="bottom">Reserve Table</button>
                </div>
             </div>
          </div>
@@ -123,9 +123,9 @@
                      <span class="carousel-control-next-icon"></span>
                   </a>
                </div>
-                  <button class="btn btn-danger btn-sm" id="carouselButton">
-                     <span id="carousel-button-icon" class="fa fa-pause"></span>
-                  </button>
+               <button class="btn btn-danger btn-sm" id="carouselButton">
+                  <span id="carousel-button-icon" class="fa fa-pause"></span>
+               </button>
             </div>
 
             <div class="row row-content align-items-center">
@@ -304,7 +304,7 @@
                   </dd>
                   <!-- room type: smoking/non smoking -->
                   <dd class="col col-md-3">Section</dd>
-                  <div class="col col-md-8">
+                  <div class="col col-md-8  d-flex flex-row">
                      <label class="btn btn-success" for="non_smoking">
                         <input type="radio" class="form-check-input d-none" id="non_smoking" name="optradio" value="option7" />Non Smoking
                      </label>
@@ -339,15 +339,15 @@
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <!-- <script>
-         $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-         });
-      </script> -->
-
+      
       <script>
+         // carousel
          $(document).ready(function () {
-            $("#mycarousel").carousel( { interval: 2000 } );
+            //tool tip
+            $('[data-toggle="tooltip"]').tooltip();
+            //carousel cycle
+            $("#mycarousel").carousel({ interval: 2000 });
+            //carrosel control button
             $("#carouselButton").click(function () {
                if ($("#carouselButton").children("span").hasClass("fa-pause")) {
                   $("#mycarousel").carousel("pause");
@@ -358,6 +358,15 @@
                   $("#carouselButton").children("span").removeClass("fa-play");
                   $("#carouselButton").children("span").addClass("fa-pause");
                }
+            });
+            //login modal
+            $("#login-form").click(function () {
+                  $("#loginModal").modal("show");
+            });
+            //reserve modal
+            $("#reserve-form").click(function () {
+                  $("#reserveModal").modal("show");
+                  $('[data-toggle="tooltip"]').tooltip("hide");
             });
          });
       </script>

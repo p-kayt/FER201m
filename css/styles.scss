@@ -15,7 +15,7 @@ $carousel-item-height: 300px;
     @include zero-margin(0px,0px);
 }
 
-.nav {
+nav {
     .btn:focus {
     outline: none;
     box-shadow: none;
@@ -91,4 +91,22 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal {
+    .modal-content{
+        border: 0;
+    }
+    .modal-header{
+        background: $background-dark;
+    }
+    .modal-title{
+        color: floralwhite;
+    }
+    .close{
+        color: floralwhite;
+      }
+    .modal-body{
+        background: $background-pale;
+    }
 }
